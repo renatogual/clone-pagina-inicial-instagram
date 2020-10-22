@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+body {
+    width: 100vh;
+    margin: auto;
+    background-color: rgb(248, 245, 245);
+}
+
+img[alt='instagram-logo'] {
+    width: 50%;
+    margin: 22px auto 12px;
+}
+
+.phone {
+    position: relative;
+}
+
+#images-random {
+    width: 240px;
+    height: 427px;
+    position: absolute;
+    top: 100px;
+    left: 151px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .colum {
+    background-color: white;
+}
+
+.colum .row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(205, 211, 205);
+    width: 350px;
+    height: 380px;
+    margin: 0px 0px 10px;
+    padding: 10px 0px;
+}
+
+.colum .row1 .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.colum .row1 .form input {
+    width: 268px;
+    height: 38px;
+    margin: 0 40px 6px;
+    padding: 9px 0px 7px 8px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.colum .row1 .form button {
+    width: 268px;
+    height: 30px;
+    margin: 8px 40px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #0095f6;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 9px;
+}
+
+.colum .separeted {
+    width: 268px;
+    height: 15px;
+    margin: 10px 40px 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.colum .separeted .line1 {
+    height: 1px;
+    width: 115px;
+    position: relative;
+    top: 9px;
+    background-color: #dbdbdb;
+}
+
+.colum .separeted .content {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.colum .separeted .line2 {
+    height: 1px;
+    width: 115px;
+    position: relative;
+    top: 9px;
+    background-color: #dbdbdb;
+}
+
+.colum .row1 .connection-facebook {
+    color: #385185;
+    width: 268px;
+    height: 20px;
+    margin: 8px 40px;
+    border: 0;
+    padding: 0;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+}
+
+#forgot-password {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.colum .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid  rgb(205, 211, 205);
+    width: 350px;
+    height: 63px;
+    margin: 0px 0px 10px;
+    padding: 10px 0px;
+}
+
+.colum .row2 a {
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.container .row3 {
+    width: 350px;
+    height: 102px;
+}
+
+.row3 p {
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+.container .row3 .download {
+    background-color: rgb(248, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 44px;
+    margin: 0px 0px 10px;
+    padding: 10px 0px;
+}
+
+.row3 .download img {
+    width: 130px;
+    height: 40px;
+}
+
+
+@media (max-width: 650px) {
+    .phone {
+        display: none;
+    }
+}
+

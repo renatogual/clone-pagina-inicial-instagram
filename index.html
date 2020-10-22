@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram</title>
+</head>
+<body onload="randomImage()">
+    <div class="container">
+        <div class="phone">
+            <img src="./img/phone.png" alt="phone">
+            <div id="images-random"></div>
+        </div>
+        <div class="colum">
+            <div class="row1">
+                <img src="./img/instagram-logo.png" alt="instagram-logo">
+                <div class="form">
+                    <input type="text" placeholder="Telefone, nome de usuário ou email">
+                    <input type="password" placeholder="Senha">
+                    <button type="submit">Entrar</button>
+                </div>
+                <div class="separeted">
+                    <div class="line1"></div>
+                    <div class="content">OU</div>
+                    <div class="line2"></div>
+                </div>
+                <div class="connection-facebook">
+                    <a href="">Entrar com o Facebook</a>
+                </div>
+                <a href="" id="#forgot-password">Esqueceu a senha?</a>
+            </div>
+            <div class="row2">
+                Não tem uma conta? <a href=""> Cadastre-se</a>
+            </div>
+            <div class="row3">
+                <p>Obtenha o aplicativo</p>   
+                <div class="download">
+                    <a href=""><img src="./img/apple-store.png" alt="apple-store"></a>
+                    <a href=""><img src="./img/google-play.png" alt="google-play"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function randomImage() {
+            let image = document.createElement('img')
+            let att = document.createAttribute('src')
+            setInterval(() => {
+                var random = Math.floor(1 + Math.random() * 5)
+                att.value = `./img/screen${random}.jpg`
+            }, 2000)
+            image.setAttributeNode(att)
+            let imagem = document.getElementById('images-random')
+            imagem.appendChild(image)
+        }
+    </script>
+</body>
+</html>
