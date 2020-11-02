@@ -178,8 +178,8 @@ img[alt='instagram-logo'] {
 
 
 @media (max-width: 650px) {
-    .phone {
-        display: none;
+    .container {
+        flex-direction: column;
     }
 }
 
